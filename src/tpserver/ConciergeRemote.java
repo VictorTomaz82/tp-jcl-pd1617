@@ -1,19 +1,19 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package tpserver;
 
+import java.util.ArrayList;
 import javax.ejb.Remote;
 
-/**
- *
- * @author victor
- */
 @Remote
 public interface ConciergeRemote {
 
     String teste();
+
+    ArrayList<String> seeNews();
+
+    ArrayList<String> seeLastThree();
+
+    void askAccess(String username, String password);
+
+    void askReactivation(String username, String password);
 
 }
