@@ -14,7 +14,7 @@ public interface ButlerRemote {
 
     public ArrayList<String> seeLastThree();
 
-    public ArrayList<String> askAccess(String username, String password, String confirmPassword);
+    public ArrayList<String> askAccess(String username, String password);
 
     public ArrayList<String> askReactivation(String username, String password);
 
