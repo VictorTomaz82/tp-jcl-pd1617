@@ -7,9 +7,11 @@ import javax.ejb.Remote;
 @Remote
 public interface ButlerRemote {
     
-    //only "true" function of buttler
     public ArrayList<String> login(String username, String password);
-
+    
+    public String getCurrentUsername();
+    
+    // these functions will call upon the usertype for user previleges
     public ArrayList<String> seeNews();
 
     public ArrayList<String> seeLastThree();
@@ -53,7 +55,7 @@ public interface ButlerRemote {
     public ArrayList<String> changeCategory(String name, String newName, String description);
 
     //---debug only (begin)---
-    public String teste();
+//    public String teste();
     //---debug only (end)---
 
 }
