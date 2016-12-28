@@ -50,8 +50,8 @@ public interface ButlerRemote {
 
     public ArrayList<String> changeCategory(String name, String newName, String description);
 
-    //----debug only (begin)----
+    //---debug only (begin)---
     public String teste();
-    //----debug only (end)----
+    //---debug only (end)---
 
 }
