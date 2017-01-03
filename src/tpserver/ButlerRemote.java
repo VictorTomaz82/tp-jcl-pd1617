@@ -59,7 +59,6 @@ public interface ButlerRemote {
 
     public ArrayList<String> askSuspension(String username, String motive);
 
-//    public ArrayList<String> unactivate(String userId);
     public ArrayList<String> viewDenunceList();
     
     public ArrayList<String> suspendUser(String username, String motive);
@@ -81,9 +80,4 @@ public interface ButlerRemote {
     public ArrayList<String> addCategory(String name, String description);
 
     public ArrayList<String> changeCategory(String name, String newName, String description);
-
-    //---debug only (begin)---
-//    public String teste();
-    //---debug only (end)---
-
 }
