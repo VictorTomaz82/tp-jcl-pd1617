@@ -29,7 +29,7 @@ public interface ButlerRemote {
     
     public ArrayList<String> viewMessage(String messageId);
 
-    public ArrayList<String> messageUser(String senderId, String recipientId, String title, String body, Date time);
+    public ArrayList<String> messageUser(String senderUsername, String recipientUsername, String title, String body, Date time);
 
     public ArrayList<String> doSale(String sellerUsername, String itemName, String categoryName, String description, int startPrice, int buyout);
     
@@ -81,9 +81,5 @@ public interface ButlerRemote {
     public ArrayList<String> addCategory(String name, String description);
 
     public ArrayList<String> changeCategory(String name, String newName, String description);
-
-    //---debug only (begin)---
-//    public String teste();
-    //---debug only (end)---
 
 }
