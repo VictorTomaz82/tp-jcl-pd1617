@@ -59,7 +59,6 @@ public interface ButlerRemote {
 
     public ArrayList<String> askSuspension(String username, String motive);
 
-//    public ArrayList<String> unactivate(String userId);
     public ArrayList<String> viewDenunceList();
     
     public ArrayList<String> suspendUser(String username, String motive);
